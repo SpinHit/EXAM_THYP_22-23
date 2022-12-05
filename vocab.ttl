@@ -1,0 +1,83 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix o: <http://omeka.org/s/vocabs/o#> .
+
+@prefix conference: <https://azerty.fr/onto/conference> .
+
+@prefix ma: <http://www.w3.org/ns/ma-ont#>.
+
+<https://azerty.fr/onto/conference> a owl:Ontology ;
+    dcterms:title "Conférence scientifique" .
+
+#################################################################
+
+conference:Chercheur a rdfs:Class ;
+    rdfs:label "Chercheur" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+
+conference:NomChercheur a rdf:Property ;
+    rdfs:label "NomChercheur" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+conference:Specialite a rdf:Property ;
+    rdfs:label "Specialite" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+conference:Institution a rdf:Property ;
+    rdfs:label "Institution" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+#################################################################
+
+conference:Conference a rdfs:Class ;
+    rdfs:label "Conference" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+conference:TitreConference a rdf:Property ;
+    rdfs:label "TitreConference" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+conference:DateConference a rdf:Property ;
+    rdfs:label "DateConference" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+conference:LieuConference a rdf:Property ;
+    rdfs:label "LieuConference" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+#################################################################
+
+conference:Presentation a rdfs:Class ;
+    rdfs:label "Presentation" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+conference:TitrePresentation a rdf:Property ;
+    rdfs:label "TitrePresentation" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+conference:DatePresentation a rdf:Property ;
+    rdfs:label "DatePresentation" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+conference:LieuPresentation a rdf:Property ;
+    rdfs:label "LieuPresentation" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+#################################################################
+
